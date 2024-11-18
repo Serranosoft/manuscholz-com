@@ -1,0 +1,10 @@
+---
+import styles from './Card.module.scss';
+const { href, title, body } = Astro.props;
+---
+
+<div class={styles.container}>
+    <div class={styles.wrapper}>
+        <slot />
+    </div>
+</div>

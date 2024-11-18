@@ -1,0 +1,33 @@
+---
+import styles from "./Text.module.scss";
+const { bold, mediumSize, muted, isSpan, smallSize } = Astro.props;
+---
+
+{
+    !isSpan ?
+        <p
+            class={`
+                ${styles.text} 
+                ${bold && styles.bold} 
+                ${mediumSize && styles.mediumSize}
+                ${smallSize && styles.smallSize}
+                ${muted && styles.muted}
+            `}
+        >
+            <slot />
+        </p>
+        :
+        <span
+            class={`
+                ${styles.text} 
+                ${bold && styles.bold} 
+                ${mediumSize && styles.mediumSize}
+                ${smallSize && styles.smallSize}
+                ${muted && styles.muted}
+            `}
+        >
+            <slot />
+        </span>
+
+
+}

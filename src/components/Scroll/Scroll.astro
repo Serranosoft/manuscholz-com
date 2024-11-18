@@ -1,0 +1,14 @@
+---
+import styles from "./Scroll.module.scss";
+const { direction, animationDuration } = Astro.props;
+
+---
+
+<div class={`${styles.container} ${direction === "up" ? styles.up : styles.down}`}>
+    <div class={styles.group} style=`animation-duration:${animationDuration}s`>
+        <slot />
+    </div>
+    <div aria-hidden class={styles.group} style=`animation-duration:${animationDuration}s`>
+        <slot />
+    </div>
+</div>

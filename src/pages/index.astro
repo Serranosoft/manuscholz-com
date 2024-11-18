@@ -1,123 +1,175 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card/Card.astro";
+import Grid from "../components/Grid/Grid.astro";
+import Overlay from "../components/Overlay/Overlay.astro";
+import Text from "../components/Text/Text.astro";
+import Tools from "../components/Tools/Tools.astro";
+import Scroll from "../components/Scroll/Scroll.astro";
+import Resources from "../components/Resources/Resources.astro";
+import Timeline from "../components/Timeline/Timeline.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
-		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
+    <main>
+        <Grid>
+            <Card>
+                <img class="profile" src="profile.jpg" />
+                <div class="row">
+                    <Text mediumSize bold>Soy Manuel</Text>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                    >
+                        <style>
+                            .user-1 {
+                                animation: user-1 1s
+                                    cubic-bezier(0.83, -0.07, 0, 1.04) both
+                                    infinite alternate-reverse;
+                            }
+                            @keyframes user-1 {
+                                0% {
+                                    transform: translateY(0) translateX(0);
+                                }
+                                100% {
+                                    transform: translateY(-1px) translateX(-2px);
+                                }
+                            }
+                        </style>
+                        <circle
+                            class="user-1"
+                            cx="12"
+                            cy="8.245"
+                            r="2.5"
+                            stroke="rgb(204,252,126)"
+                            stroke-width="1.5"></circle>
+                        <ellipse
+                            cx="12"
+                            cy="15.926"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            rx="5"
+                            ry="2.329"></ellipse>
+                    </svg>
+                </div>
+                <Text muted
+                    >Desarrollador y <b>emprendedor digital</b>. Construyendo un
+                    portfolio de <Text isSpan>proyectos SEO, SaaS y ASO.</Text
+                    ></Text
+                >
+            </Card>
+            <Card>
+                <div class="row">
+                    <Text mediumSize bold>Línea de tiempo</Text>
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        ><style>
+                            @keyframes rotate {
+                                0% {
+                                    transform: rotate(0);
+                                }
+                                to {
+                                    transform: rotate(360deg);
+                                }
+                            }
+                        </style><rect
+                            width="16"
+                            height="16"
+                            x="4"
+                            y="4"
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            rx="8"></rect><path
+                            stroke="rgb(204,252,126)"
+                            stroke-linecap="round"
+                            stroke-width="1.5"
+                            d="M12.021 12l2.325 2.325"></path><path
+                            stroke="rgb(204,252,126)"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M12.021 12V6.84"
+                            style="animation:rotate 2s linear infinite both;transform-origin:center"
+                        ></path></svg
+                    >
+                </div>
+                <Timeline />
+            </Card>
+            <Card>
+                <div class="row">
+                    <Text mediumSize bold>Recursos favoritos</Text>
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        ><style>
+                            @keyframes slide-tr {
+                                0% {
+                                    transform: translateY(0) translateX(0);
+                                }
+                                to {
+                                    transform: translateY(-2px) translateX(2px);
+                                }
+                            }
+                        </style><path
+                            stroke="#fff"
+                            stroke-width="1.5"
+                            d="M17.82 16.889a7 7 0 001.162-3.39A.473.473 0 0018.5 13h-6a.5.5 0 01-.5-.5v-6a.473.473 0 00-.5-.482 7 7 0 106.32 10.871z"
+                        ></path><path
+                            stroke="rgb(204,252,126)"
+                            stroke-width="1.5"
+                            d="M19 11c.552 0 1.009-.45.917-.995a6 6 0 00-4.922-4.922C14.451 4.992 14 5.448 14 6v4a1 1 0 001 1h4z"
+                            style="animation:slide-tr 1s cubic-bezier(.47,0,.745,.715) infinite alternate-reverse both"
+                        ></path></svg
+                    >
+                </div>
+                <Resources />
+            </Card>
+            <Card>
+                <div class="row">
+                    <Text mediumSize bold>Herramientas favoritas</Text>
+                    <svg
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        fill="none"
+                        ><style>
+                            @keyframes rotate {
+                                0% {
+                                    transform: rotateZ(0);
+                                }
+                                to {
+                                    transform: rotateZ(360deg);
+                                }
+                            }
+                        </style><g
+                            style="animation:rotate 3s cubic-bezier(.7,-.03,.26,1.05) both infinite;transform-origin:center center"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="1.5"
+                            ><path
+                                stroke="#fff"
+                                d="M5.262 15.329l.486.842a1.49 1.49 0 002.035.55 1.486 1.486 0 012.036.529c.128.216.197.463.2.714a1.493 1.493 0 001.493 1.536h.979a1.486 1.486 0 001.485-1.493 1.493 1.493 0 011.493-1.471c.252.002.498.071.714.2a1.493 1.493 0 002.036-.55l.521-.857a1.493 1.493 0 00-.542-2.036 1.493 1.493 0 010-2.586c.71-.41.952-1.318.543-2.028l-.493-.85a1.493 1.493 0 00-2.036-.579 1.479 1.479 0 01-2.029-.543 1.428 1.428 0 01-.2-.714c0-.825-.668-1.493-1.492-1.493h-.98c-.82 0-1.488.664-1.492 1.486a1.485 1.485 0 01-1.493 1.493 1.521 1.521 0 01-.714-.2 1.493 1.493 0 00-2.036.542l-.514.858a1.486 1.486 0 00.543 2.035 1.486 1.486 0 01.543 2.036c-.13.226-.317.413-.543.543a1.493 1.493 0 00-.543 2.028v.008z"
+                                clip-rule="evenodd"></path><path
+                                stroke="rgb(204,252,126)"
+                                d="M12.044 10.147a1.853 1.853 0 100 3.706 1.853 1.853 0 000-3.706z"
+                            ></path></g
+                        ></svg
+                    >
+                </div>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
+                <Tools />
+            </Card>
+        </Grid>
+    </main>
+</Layout>

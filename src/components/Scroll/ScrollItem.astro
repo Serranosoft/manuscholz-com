@@ -1,0 +1,32 @@
+---
+import Text from "../Text/Text.astro";
+import styles from "./Scroll.module.scss";
+
+const { image, title, content, date, link } = Astro.props;
+---
+
+<div class={styles.item}>
+    <div class={styles.info}>
+        <div class={styles.image}>
+            <img src={image} />
+        </div>
+        <div class={styles.column}>
+            <Text bold smallSize>{title}</Text>
+            <Text muted smallSize>{content}</Text>
+        </div>
+    </div>
+    {
+        date &&
+            <div class={styles.date}>
+                <Text muted smallSize>{date}</Text>
+            </div>
+    }
+    {
+        link &&
+            <div class={styles.link}>
+                <Text muted smallSize>
+                    <a href={link}>Ver más</a>
+                </Text>
+            </div>
+    }
+</div>

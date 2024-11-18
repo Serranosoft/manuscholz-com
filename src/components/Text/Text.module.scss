@@ -1,0 +1,21 @@
+.text {
+    font-size: 1.1rem;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    &.mediumSize {
+        font-family: "Yatra", sans-serif;
+        font-size: 1.5rem;
+    }
+    &.smallSize {
+        font-size: 0.88rem;
+    }
+    &.muted {
+        color: #b4b4b4;
+        span {
+            color: #fff;
+        }
+    }
+    &.bold {
+        font-weight: 700;
+    }
+}
