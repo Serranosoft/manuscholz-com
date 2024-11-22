@@ -4,7 +4,7 @@ const { direction, animationDuration } = Astro.props;
 
 ---
 
-<div class={`${styles.container} ${direction === "up" ? styles.up : styles.down}`}>
+<div class={`${styles.container} ${direction === "row" && styles.row}`}>
     <div class={styles.group} style=`animation-duration:${animationDuration}s`>
         <slot />
     </div>
