@@ -1,4 +1,5 @@
 ---
+import Rrss from "../rrss/Rrss.astro";
 import Text from "../Text/Text.astro";
 import styles from "./About.module.scss";
 ---
@@ -7,16 +8,17 @@ import styles from "./About.module.scss";
 
 <div class={styles.container}>
     <Text smallSize muted
-        >Actualmente trabajo como jefe de desarrollo de software en el sector de
+        >Actualmente trabajo como <b>jefe de desarrollo</b> de software en el sector de
         la ingeniería industrial.</Text
     >
     <Text smallSize muted
-        >También llevo trabajando 4 años como autónomo en el desarrollo, diseño
+        >También llevo trabajando <b>4 años como autónomo</b> en el desarrollo, diseño
         de webs y aplicaciones móviles atrayendo tráfico con posicionamiento SEO
         y facturando con anuncios y afiliación con marcas.</Text
     >
     <Text smallSize muted
-        >En mi stack tecnológico me encuentro cómodo con Scss, Typescript,
-        Next.js, MySQL, .NET entre otros.</Text
+        >En mi stack tecnológico me encuentro cómodo con <b>Scss, Typescript,
+        Next.js, MySQL, .NET</b> entre otros.</Text
     >
+    <Rrss />
 </div>

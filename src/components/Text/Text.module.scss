@@ -4,10 +4,12 @@
     font-family: "Poppins", sans-serif;
     text-align: start;
 
-    b {
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: rgba(0, 0, 0, 0);
-        background-image: linear-gradient(90deg, rgb(151, 252, 126) 0%, rgb(207, 255, 168) 35.4519%, rgb(227, 254, 216) 71.6832%, rgb(204, 252, 126) 100%);
+    :global {
+        b.highlight-green {
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: rgba(0, 0, 0, 0);
+            background-image: linear-gradient(90deg, rgb(151, 252, 126) 0%, rgb(207, 255, 168) 35.4519%, rgb(227, 254, 216) 71.6832%, rgb(204, 252, 126) 100%);
+        }
     }
 
     &.mediumSize {

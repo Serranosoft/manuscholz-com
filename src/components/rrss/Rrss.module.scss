@@ -1,0 +1,29 @@
+.rrss {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    a {
+        display: flex;
+        svg {
+            width: 1.75rem;
+            height: 1.75rem;
+        }
+
+      
+        &:hover {
+            svg {
+                &.linkedin {
+                    path {
+                    
+                        fill: #0A66C2
+                    }
+                }
+                &.youtube {
+                    path {
+                        fill: #FF0000;
+                    }
+                }
+            }
+        }
+    }
+}

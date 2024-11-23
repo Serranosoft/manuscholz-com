@@ -2,19 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card/Card.astro";
 import Grid from "../components/Grid/Grid.astro";
-import Overlay from "../components/Overlay/Overlay.astro";
 import Text from "../components/Text/Text.astro";
 import Tools from "../components/Tools/Tools.astro";
-import Scroll from "../components/Scroll/Scroll.astro";
 import Resources from "../components/Resources/Resources.astro";
 import Timeline from "../components/Timeline/Timeline.astro";
-import Tech from "../components/Tech/Tech.astro";
 import Works from "../components/Works/Works.astro";
 import About from "../components/About/About.astro";
 import Info from "../components/Info/Info.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Manuel Scholz - Portfolio">
     <main>
         <Grid>
             <Card>
@@ -62,7 +59,7 @@ import Info from "../components/Info/Info.astro";
                     <Text mediumSize bold>Soy Manuel</Text>
                 </div>
                 <Text muted
-                    >Desarrollador y <b>emprendedor digital</b>. Construyendo un
+                    >Desarrollador y <b class="highlight-green">emprendedor digital</b>. Construyendo un
                     portfolio de <Text isSpan>proyectos SEO, SaaS y ASO.</Text
                     ></Text
                 >
@@ -179,12 +176,14 @@ import Info from "../components/Info/Info.astro";
             </Card>
             <Card>
                 <div class="row">
+                    <svg fill=none height=24 viewBox="0 0 24 24"width=24 xmlns=http://www.w3.org/2000/svg><style>.eye-1{animation:eye 2.4s infinite}.eye-2{animation:squeeze 2.4s infinite}@keyframes eye{90%{transform:none;animation-timing-function:ease-in}93%{transform:translateY(15px) scaleY(0)}100%{animation-timing-function:ease-out}}@keyframes squeeze{90%{transform:none;animation-timing-function:ease-in}93%{transform:translateY(3px) scaleY(.8)}100%{animation-timing-function:ease-out}}</style><path class=eye-1 d="M19.195 11.31c.325.41.325.97 0 1.38-1.114 1.4-3.916 4.45-7.195 4.45-3.28 0-6.08-3.05-7.195-4.45a1.097 1.097 0 010-1.38C5.92 9.91 8.721 6.86 12 6.86c3.28 0 6.08 3.05 7.195 4.45z"stroke=#fff stroke-width=1.5 /><circle class=eye-2 cx=12 cy=12 r=1.972 stroke="rgb(204, 252, 126)" stroke-width=1.5 /></svg>
                     <Text mediumSize bold>Acerca de mi</Text>
                 </div>
                 <About />
             </Card>
             <Card>
                 <div class="row">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><style>@keyframes loader-7-1{0%{transform:translateX(0)}to{transform:translateX(6px)}}@keyframes loader-7-2{0%{transform:translateX(0)}to{transform:translateX(-6px)}}</style><path stroke="rgb(204, 252, 126)" stroke-linecap="round" stroke-width="1.5" d="M6.853 10h5" style="animation:loader-7-1 1.5s cubic-bezier(.86,0,.07,1) infinite alternate both"/><path stroke="#fff" stroke-linecap="round" stroke-width="1.5" d="M12.147 14h5" style="animation:loader-7-2 1.5s cubic-bezier(.86,0,.07,1) infinite alternate both"/></svg>
                     <Text mediumSize bold>Algunos de mis trabajos</Text>
                     <Info content="Actualmente poseo un portfolio de 21 aplicaciones y 8 páginas webs publicadas generando tráfico y rendimiento" />
                 </div>
