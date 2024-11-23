@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    margin-left: .25rem;
+    cursor: pointer;
+    .wrapper {
+        svg {
+            width: 1.85rem;
+            height: 1.85rem;
+        }
+        .content {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 250px;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            border-radius: 1rem;
+            padding: 1rem;
+            background-color: rgba(0,0,0,0.75);
+            z-index: 1;
+        }
+    }
+
+    &:hover {
+        .wrapper {
+            .content {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        .wrapper {
+            .content {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}
