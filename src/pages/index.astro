@@ -9,6 +9,7 @@ import Scroll from "../components/Scroll/Scroll.astro";
 import Resources from "../components/Resources/Resources.astro";
 import Timeline from "../components/Timeline/Timeline.astro";
 import Tech from "../components/Tech/Tech.astro";
+import Works from "../components/Works/Works.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -17,7 +18,6 @@ import Tech from "../components/Tech/Tech.astro";
             <Card>
                 <div style="position: relative">
                     <img class="profile" src="profile.jpg" />
-                    <Tech />
                 </div>
                 <div class="row">
                     <Text mediumSize bold>Soy Manuel</Text>
@@ -173,6 +173,21 @@ import Tech from "../components/Tech/Tech.astro";
                 </div>
 
                 <Tools />
+            </Card>
+            <Card>
+                <div class="row">
+                    <Text mediumSize bold>Acerca de mi</Text>
+                </div>
+                <Text smallSize muted>Actualmente trabajo como jefe de desarrollo de software en el sector de la ingeniería industrial.</Text>
+                <Text smallSize muted>También llevo trabajando 4 años como autónomo en el desarrollo, diseño de webs y aplicaciones móviles atrayendo tráfico con posicionamiento SEO y facturando con anuncios y afiliación con marcas.</Text>
+                <Text smallSize muted>En mi stack tecnológico me encuentro cómodo con Scss, Typescript, Next.js, MySQL, .NET entre otros.</Text>
+
+            </Card>
+            <Card>
+                <div class="row">
+                    <Text mediumSize bold>Algunos de mis trabajos</Text>
+                </div>
+                <Works />
             </Card>
         </Grid>
     </main>

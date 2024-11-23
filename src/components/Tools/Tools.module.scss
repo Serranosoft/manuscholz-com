@@ -7,7 +7,9 @@
         flex-direction: column;
         gap: 0.5rem;
         flex: 1 1 100px;
-        text-align: center;
+        p {
+            text-align: center;
+        }
         .image {
             background-color: rgba(204,252,126,0.05);
             padding: 1rem;

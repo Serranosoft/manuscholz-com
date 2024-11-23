@@ -1,0 +1,80 @@
+---
+import Scroll from "../Scroll/Scroll.astro";
+import ScrollImage from "../Scroll/ScrollImage.astro";
+import ScrollItem from "../Scroll/ScrollItem.astro";
+import styles from "./Works.module.scss";
+---
+
+<div class={styles.container}>
+    <div class={styles.wrapper}>
+
+        <div class={styles.web}>
+            <Scroll direction="row" animationDuration="35">
+                <ScrollImage
+                    image="/section7.png"
+                    link="pipipi"
+                />
+                <ScrollImage
+                    image="/section8.png"
+                    link="pipipi"
+                />
+                <ScrollImage
+                    image="/section9.png"
+                    link="pipipi"
+                />
+                <ScrollImage
+                image="/section10.png"
+                link="pipipi"
+                />
+            </Scroll>
+        </div>
+        
+        <div class={styles.app}>
+            <Scroll direction="up" animationDuration="25">
+                <ScrollItem
+                    image="/crochet.jpg"
+                    title="Crochet"
+                    content="+50.000 descargas"
+                    link="pipipi"
+                />
+                <ScrollItem
+                    image="/maquillaje.png"
+                    title="Maquillaje"
+                    content="+10.000 Descargas"
+                    link="pipipi"
+                />
+                <ScrollItem
+                    image="/listas.png"
+                    title="Listas"
+                    content="+1.000 Descargas"
+                    link="pipipi"
+                />
+                <ScrollItem
+                    image="/notas.png"
+                    title="Notas"
+                    content="+10.000 Descargas"
+                    link="pipipi"
+                />
+                <ScrollItem
+                    image="/sintaxis.png"
+                    title="Resolver Sintaxis"
+                    content="+10.000 Descargas"
+                    link="pipipi"
+                />
+                <ScrollItem
+                    image="/conversor.png"
+                    title="Conversor de imágenes"
+                    content="Recien publicada"
+                    link="pipipi"
+                />
+                <ScrollItem
+                    image="/gasolineras.jpg"
+                    title="Gasolineras cercanas"
+                    content="+100 Descargas"
+                    link="pipipi"
+                />
+            </Scroll>
+        </div>
+
+    </div>
+</div>

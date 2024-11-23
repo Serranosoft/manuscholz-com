@@ -1,0 +1,10 @@
+---
+import styles from "./Scroll.module.scss";
+const { image } = Astro.props;
+---
+
+<div class={styles.item}>
+    <div class={styles.image}>
+        <img src={image} />
+    </div>
+</div>
