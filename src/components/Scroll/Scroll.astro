@@ -1,14 +1,16 @@
 ---
 import styles from "./Scroll.module.scss";
-const { direction, animationDuration } = Astro.props;
+const { animation, direction, animationDuration } = Astro.props;
 
 ---
 
-<div class={`${styles.container} ${direction === "row" && styles.row}`}>
+<div class={`${animation !== "false" ? styles.animation : ""} ${styles.container} ${direction === "row" ? styles.row : ""}`}>
     <div class={styles.group} style=`animation-duration:${animationDuration}s`>
         <slot />
     </div>
-    <div aria-hidden class={styles.group} style=`animation-duration:${animationDuration}s`>
-        <slot />
-    </div>
+    { animation !== "false" &&
+        <div aria-hidden class={styles.group} style=`animation-duration:${animationDuration}s`>
+            <slot />
+        </div>
+    }
 </div>

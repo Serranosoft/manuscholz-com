@@ -1,7 +1,7 @@
 .text {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "AncizarSans", sans-serif;
     text-align: start;
 
     :global {
@@ -13,12 +13,13 @@
     }
 
     &.mediumSize {
-        font-family: "Yatra", sans-serif;
-        font-size: 1.5rem;
+        font-family: "AncizarSans", sans-serif;
+        font-weight: 500;
+        font-size: 1.55rem;
     }
 
     &.smallSize {
-        font-size: 0.88rem;
+        font-size: 1.05rem;
     }
 
     &.muted {

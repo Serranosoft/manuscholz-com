@@ -18,7 +18,9 @@ const { image, title, content, date, link } = Astro.props;
     {
         date &&
             <div class={styles.date}>
-                <Text muted smallSize>{date}</Text>
+                <Text muted smallSize>{date.start}</Text>
+                <Text muted smallSize>-</Text>
+                <Text muted smallSize>{date.end}</Text>
             </div>
     }
     {

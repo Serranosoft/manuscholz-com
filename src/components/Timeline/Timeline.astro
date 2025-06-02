@@ -3,35 +3,35 @@ import Scroll from "../Scroll/Scroll.astro";
 import ScrollItem from "../Scroll/ScrollItem.astro";
 ---
 
-<Scroll direction="up" animationDuration="45">
+<Scroll animation="false" direction="up" animationDuration="0">
     <ScrollItem
-        image="/dragsa.png"
-        title="Surcontrol"
-        content="Desarrollador Software"
-        date="Sept. 2021"
-    />
-    <ScrollItem
-        image="/kaoos.svg"
-        title="Kaoos - Agencia SEO"
-        content="Fundador"
-        date="Febrero 2023"
+        image="/profile.jpg"
+        title="Autónomo"
+        content="Webs y Apps"
+        date={{ start: "Oct. 2020" , end: "Actualidad" }}
     />
     <ScrollItem
         image="/dragsa.png"
-        title="Surcontrol"
-        content="Jefe de Software"
-        date="Marzo 2024"
-    />
-    <ScrollItem
-        image="/zapatos-barefoot.webp"
-        title="Zapatos barefoot - Ecommerce"
-        content="Fundador"
-        date="Junio 2024"
+        title="Desarrollador Software"
+        content="Surcontrol"
+        date={{ start: "Sep. 2021", end: "Feb. 2024" }}
     />
     <ScrollItem
         image="/dragsa.png"
-        title="Surcontrol"
-        content="SaaS Manager"
-        date="Marzo 2025"
+        title="Jefe de Software"
+        content="Surcontrol"
+        date={{ start: "Feb. 2024", end: "Ene 2025" }}
+    />
+    <ScrollItem
+        image="/dragsa.png"
+        title="SaaS Manager"
+        content="Surcontrol"
+        date={{ start: "Enero 2025", end: "Abril 2025" }}
+    />
+    <ScrollItem
+        image="/dragsa.png"
+        title="Director de Marketing"
+        content="Surcontrol"
+        date={{ start: "Abril 2025", end: "Actualidad" }}
     />
 </Scroll>

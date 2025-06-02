@@ -1,9 +1,8 @@
 ---
 import styles from './Card.module.scss';
-const { href, title, body } = Astro.props;
+const { scroll } = Astro.props;
 ---
-
-<div class={styles.container}>
+<div class={`${styles.container} ${scroll ? styles.scroll : ""} `}>
     <div class={styles.wrapper}>
         <slot />
     </div>

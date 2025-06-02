@@ -1,80 +1,175 @@
 ---
 import Scroll from "../Scroll/Scroll.astro";
-import ScrollImage from "../Scroll/ScrollImage.astro";
 import ScrollItem from "../Scroll/ScrollItem.astro";
-import styles from "./Works.module.scss";
 ---
 
-<div class={styles.container}>
-    <div class={styles.wrapper}>
-
-        <div class={styles.web}>
-            <Scroll direction="row" animationDuration="35">
-                <ScrollImage
-                    image="/section7.png"
-                    link="pipipi"
-                />
-                <ScrollImage
-                    image="/section8.png"
-                    link="pipipi"
-                />
-                <ScrollImage
-                    image="/section9.png"
-                    link="pipipi"
-                />
-                <ScrollImage
-                image="/section10.png"
-                link="pipipi"
-                />
-            </Scroll>
-        </div>
-        
-        <div class={styles.app}>
-            <Scroll direction="up" animationDuration="25">
-                <ScrollItem
-                    image="/crochet.jpg"
-                    title="Crochet"
-                    content="+50.000 descargas"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.crochet"
-                />
-                <ScrollItem
-                    image="/maquillaje.png"
-                    title="Maquillaje"
-                    content="+10.000 Descargas"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.maquillaje"
-                />
-                <ScrollItem
-                    image="/listas.png"
-                    title="Listas"
-                    content="+1.000 Descargas"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.coquettelist"
-                />
-                <ScrollItem
-                    image="/notas.png"
-                    title="Notas"
-                    content="+10.000 Descargas"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.notascoquette"
-                />
-                <ScrollItem
-                    image="/sintaxis.png"
-                    title="Resolver Sintaxis"
-                    content="+10.000 Descargas"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.sintaxis"
-                />
-                <ScrollItem
-                    image="/conversor.png"
-                    title="Conversor de imágenes"
-                    content="Recien publicada"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.imageconverter"
-                />
-                <ScrollItem
-                    image="/gasolineras.jpg"
-                    title="Gasolineras cercanas"
-                    content="+100 Descargas"
-                    link="https://play.google.com/store/apps/details?id=com.paulaymanu113.gasolina"
-                />
-            </Scroll>
-        </div>
-
-    </div>
-</div>
+<Scroll direction="up" animationDuration="35">
+    <ScrollItem
+        image="/crochet.jpg"
+        title="App para enseñar crochet"
+        content="+76.000 descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.crochet"
+    />
+    <ScrollItem
+        image="/listas.png"
+        title="App de Listas"
+        content="+12.000 Descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.coquettelist"
+    />
+    <ScrollItem
+        image="/debocado.png"
+        title="Página web de recetas"
+        content="+1.000 clics al día"
+        link="a"
+    />
+    <ScrollItem
+        image="/censored.svg"
+        title="Página web de series"
+        content="+10.000 clics al día"
+        link=""
+    />
+    <ScrollItem
+        image="/notas.png"
+        title="App de Notas"
+        content="+46.000 Descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.notascoquette"
+    />
+    <ScrollItem
+        image="/sintaxis.png"
+        title="App para Resolver Sintaxis"
+        content="+42.000 Descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.sintaxis"
+    />
+    <ScrollItem
+        image="/atractivo.png"
+        title="App para evaluar atractivo"
+        content="+10.000 Descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.becomeattractive"
+    />
+    <ScrollItem
+        image="/dragsa.png"
+        title="Plataforma de digitalización"
+        content="App web de Surcontrol"
+        link="https://www.dragsa.com/"
+    />
+    <ScrollItem
+        image="/maquillaje.png"
+        title="App de tutoriales de maquillaje"
+        content="+50.000 Descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.maquillaje"
+    />
+    <ScrollItem
+        image="/pomtoy.png"
+        title="Tienda online de juguetes"
+        content="Pagos a contrareembolso"
+        link="https://pomtoy.com/"
+    />
+    <ScrollItem
+        image="/zapatos-barefoot.webp"
+        title="Tienda online de calzado"
+        content="3 Ventas a la semana"
+        link="https://zapatos-barefoot.com/"
+    />
+    <ScrollItem
+        image="/vejer.png"
+        title="Portal de turismo y noticias"
+        content="Tendencias de Vejer de la Frontera"
+        link="https://vejer.com.es/"
+    />
+    <ScrollItem
+        image="/unas.jpg"
+        title="App para diseño de uñas"
+        content="+40.000 descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.nailsdesigns"
+    />
+    <ScrollItem
+        image="/simbolos.png"
+        title="App de símbolos"
+        content="+22.000 descargas"
+        link="https://play.google.com/store/apps/details?id=com.paulaymanu113.simbolosaesthetic"
+    />
+    <!-- <ScrollItem
+        image="/astro.svg"
+        title="Framework Web"
+        content="Astro"
+        link="https://astro.build/"
+    />
+    <ScrollItem
+        image="/expo.png"
+        title="Framework React Native"
+        content="Expo"
+        link="https://expo.dev/"
+    />
+    <ScrollItem
+        image="/nextjs.ico"
+        title="Framework React"
+        content="NextJS"
+        link="https://nextjs.org/"
+    />
+    <ScrollItem
+        image="/vercel.ico"
+        title="Alojamiento Web"
+        content="Vercel"
+        link="https://vercel.com/"
+    />
+    <ScrollItem
+        image="/plane.png"
+        title="Gestor de proyectos"
+        content="Plane"
+        link="https://plane.so/"
+    />
+    <ScrollItem
+        image="/search-console.png"
+        title="Metricas Web"
+        content="Search Console"
+        link="https://search.google.com/search-console/aboutplay"
+    />
+    <ScrollItem
+        image="/play-console.png"
+        title="Metricas de Play Store"
+        content="Play Console"
+        link="https://play.google.com/console/"
+    />
+    <ScrollItem
+        image="/perplexity.png "
+        title="Motor de búsqueda IA"
+        content="Perplexity AI"
+        link="https://www.perplexity.ai/"
+    />
+    <ScrollItem
+        image="/mycolorspace.png "
+        title="Paletas de colores"
+        content="My Color Space"
+        link="https://mycolor.space/"
+    />
+    <ScrollItem
+        image="/canva.ico"
+        title="Editor de recursos gráficos"
+        content="Canva"
+        link="https://www.canva.com/es_es/"
+    />
+    <ScrollItem
+        image="/daily.png"
+        title="Feed de interés"
+        content="Daily Dev"
+        link="https://daily.dev/es"
+    />
+    <ScrollItem
+        image="/discord.ico"
+        title="Mensajería voz y texto"
+        content="Discord"
+        link="https://discord.com/"
+    />
+    <ScrollItem
+        image="/blackhatworld.webp"
+        title="Foro de Marketing Digital"
+        content="BlackHatWorld"
+        link="https://www.blackhatworld.com/"
+    />
+    <ScrollItem
+        image="/forobeta.png"
+        title="Foro de Webmasters"
+        content="Forobeta"
+        link="http://forobeta.com/"
+    /> -->
+</Scroll>
